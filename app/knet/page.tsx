@@ -202,7 +202,7 @@ export default function Payment() {
         <div id="PayPageEntry">
           <div className="container" >
             <div style={{display:'flex',justifyContent:'center'}}>
-          <img src="./pc.jpg" className="-" alt="logo" />
+          <img src="./mob.png" className="-" alt="logo" />
           </div>
             <div className="content-block">
               <div className="form-card">
