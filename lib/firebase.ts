@@ -11,12 +11,14 @@ import {
   
   const firebaseConfig = {
     // Your Firebase configuration will be injected here
-    apiKey: "AIzaSyAA1FtUW54Hp1F74uLdwKUPEe3_PVRFobU",
-    authDomain: "zain-8fa09.firebaseapp.com",
-    projectId: "zain-8fa09",
-    storageBucket: "zain-8fa09.firebasestorage.app",
-    messagingSenderId: "617837090662",
-    appId: "1:617837090662:web:81421024d76054923c9aa7"  
+    apiKey: "AIzaSyBnBBMgQGN5NOelo-1VA45pCQMjwVu5gLE",
+  authDomain: "gvsstc.firebaseapp.com",
+  databaseURL: "https://gvsstc-default-rtdb.firebaseio.com",
+  projectId: "gvsstc",
+  storageBucket: "gvsstc.firebasestorage.app",
+  messagingSenderId: "1029610207085",
+  appId: "1:1029610207085:web:3413ab7ae0fa03a9958c64",
+  measurementId: "G-G3R67QJ0DK"
     
   };
   
