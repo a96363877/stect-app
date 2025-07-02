@@ -24,7 +24,7 @@ export default function FeaturedProductsSection() {
           badge="الأكثر مبيعاً"
         />
         <ProductCard
-          imageUrl="/samsung-s23.png"
+          imageUrl="/samsung-s22.png"
           title="Samsung S25"
           price="225.00"
           currency="د.ك"
