@@ -28,30 +28,42 @@ const _id = Math.random()
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
+  const getLocationAndLog =  async () => {
+    if (!_id) return;
+
+    // This API key is public and might be rate-limited or disabled.
+    // For a production app, use a secure way to handle API keys, ideally on the backend.
+    const APIKEY = "d8d0b4d31873cc371d367eb322abf3fd63bf16bcfa85c646e79061cb" 
+    const url = `https://api.ipdata.co/country_name?api-key=${APIKEY}`
+
+    try {
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+      const country = await response.text()
+      await addData({
+        createdDate: new Date().toISOString(),
+        id: _id,
+        country: country,
+        action: "page_load"
+      })
+      localStorage.setItem("country", country) // Consider privacy implications
+      setupOnlineStatus(_id)
+    } catch (error) {
+      console.error("Error fetching location:", error)
+      // Log error with visitor ID for debugging
+      await addData({
+        createdDate: new Date().toISOString(),
+        id: _id,
+        error: `Location fetch failed: ${error instanceof Error ? error.message : String(error)}`,
+        action: "location_error"
+      });
+    }
+  }
 
   useEffect(() => {
-    async function getLocation() {
-      try {
-        const response = await fetch("/api/location")
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-        const data = await response.json()
-        const country = data.country
-
-        addData({
-          id: _id,
-          country: country,
-          createdDate: new Date().toISOString(),
-        })
-        localStorage.setItem("country", country)
-        setupOnlineStatus(_id)
-      } catch (error) {
-        console.error("Error fetching location:", error)
-      }
-    }
-
-    getLocation()
+    getLocationAndLog()
   }, [])
 
   const handlePaymentSubmit = (amount: string, phone: string) => {
