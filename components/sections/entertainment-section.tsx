@@ -16,17 +16,17 @@ export default function EntertainmentSection() {
       </div>
       <div className="grid grid-cols-3 gap-3 md:gap-4">
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/rgb.png"
           label="Netflix"
           bgColor="bg-gradient-to-br from-red-50 to-red-100"
         />
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/Mbc_Shahid_logo.svg"
           label="Shahid"
           bgColor="bg-gradient-to-br from-yellow-50 to-yellow-100"
         />
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/Spotify.png"
           label="Spotify"
           bgColor="bg-gradient-to-br from-green-50 to-green-100"
         />

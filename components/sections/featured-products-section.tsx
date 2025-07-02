@@ -16,7 +16,7 @@ export default function FeaturedProductsSection() {
       </div>
       <div className="grid grid-cols-2 gap-4 md:gap-6">
         <ProductCard
-          imageUrl="/placeholder.svg?width=400&height=400"
+          imageUrl="/samsung-s22.png"
           title="Samsung S25 Ultra"
           price="255.00"
           currency="د.ك"
@@ -24,7 +24,7 @@ export default function FeaturedProductsSection() {
           badge="الأكثر مبيعاً"
         />
         <ProductCard
-          imageUrl="/placeholder.svg?width=400&height=400"
+          imageUrl="/samsung-s23.png"
           title="Samsung S25"
           price="225.00"
           currency="د.ك"

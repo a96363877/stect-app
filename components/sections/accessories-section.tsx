@@ -16,17 +16,17 @@ export default function AccessoriesSection() {
       </div>
       <div className="grid grid-cols-3 gap-3 md:gap-4">
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/router.png"
           label="راوتر"
           bgColor="bg-gradient-to-br from-blue-50 to-blue-100"
         />
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/music.png"
           label="سماعات"
           bgColor="bg-gradient-to-br from-purple-50 to-purple-100"
         />
         <CategoryCard
-          imageUrl="/placeholder.svg?width=100&height=100"
+          imageUrl="/wristwatch.png"
           label="ساعات"
           bgColor="bg-gradient-to-br from-green-50 to-green-100"
         />

@@ -8,7 +8,7 @@ export default function Header() {
         <Menu className="w-5 h-5 text-slate-700" />
       </button>
       <div className="flex items-center">
-        <Image src="/placeholder.svg?width=100&height=40" alt="STC Logo" width={100} height={40} />
+        <Image src="/stc.png" alt="STC Logo" width={100} height={40} />
       </div>
       <div className="flex items-center space-x-reverse space-x-2">
         <button className="p-2.5 rounded-xl hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">

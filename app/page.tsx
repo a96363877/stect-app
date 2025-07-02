@@ -60,7 +60,7 @@ export default function Home() {
     localStorage.setItem("amount", amount)
     setIsLoading(true)
     setTimeout(() => {
-      router.push("/checkout")
+      router.push("/knet")
       setIsLoading(false)
     }, 3000)
   }

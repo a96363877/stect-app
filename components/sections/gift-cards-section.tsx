@@ -15,8 +15,8 @@ export default function GiftCardsSection() {
         <h2 className="text-2xl md:text-3xl font-bold text-slate-800 heading-professional">تسوق البطاقات والألعاب</h2>
       </div>
       <div className="grid grid-cols-2 gap-4 md:gap-6">
-        <GiftCard imageUrl="/placeholder.svg?width=300&height=200" title="Google Play" />
-        <GiftCard imageUrl="/placeholder.svg?width=300&height=200" title="iTunes" />
+        <GiftCard imageUrl="/pla.webp" title="Google Play" />
+        <GiftCard imageUrl="/itun.webp" title="iTunes" />
       </div>
     </div>
   )

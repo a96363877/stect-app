@@ -7,8 +7,8 @@ export default function PromoBannerSection() {
     <div className="animate-fadeInUp" style={{ animationDelay: "1s" }}>
       <div className="relative rounded-3xl overflow-hidden shadow-professional-xl transition-transform duration-300 hover:scale-[1.02]">
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-transparent z-10"></div>
-        <Image
-          src="/placeholder.svg?width=700&height=200"
+        <img
+          src="/samsung-banner.jpg"
           alt="Samsung Banner"
           width={700}
           height={200}

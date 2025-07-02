@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="relative mx-4 md:mx-6 my-8 rounded-3xl overflow-hidden shadow-professional-xl animate-fadeInUp">
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-purple-900/50 to-red-500/70 z-10"></div>
+    <div className="relative mx-1 md:mx-6 my-8 rounded-3xl overflow-hidden shadow-professional-xl animate-fadeInUp">
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-purple-900/20 to-red-500/70 z-10"></div>
       <Image
-        src="/placeholder.svg?width=1200&height=400"
+        src="/hero-banner.jpg"
         alt="Hero Banner"
         width={1200}
         height={400}
@@ -15,9 +15,8 @@ export default function HeroSection() {
         priority
       />
       <div className="absolute inset-0 z-20 p-6 md:p-8 flex flex-col justify-between">
-        <div className="bg-black/20 backdrop-blur-md rounded-3xl p-5 w-48 text-center shadow-professional-lg border border-white/30 animate-scaleIn">
-          <div className="text-red-500 font-bold text-2xl heading-professional">خلك ON</div>
-          <div className="text-red-300 text-sm mt-1 font-medium text-professional">باقات الدفع المسبقة الجديدة</div>
+        <div className=" animate-scaleIn">
+          <div className="text-red-300 text-sm mt-1 font-medium text-professional">   </div>
         </div>
         <div className="space-y-4 animate-slideInRight self-end text-right">
           <h1 className="text-white font-bold text-4xl md:text-5xl leading-tight drop-shadow-2xl heading-professional">
