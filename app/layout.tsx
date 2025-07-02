@@ -1,17 +1,10 @@
-import type React from "react"
-import "./globals.css"
-import type { Metadata } from "next"
-
-// Load local Arabic font
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "شركة الاتصالات",
-  description: "دفع الفواتير وشحن الخطوط  واحصل على اخر الخدمات  العروض",
-   viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.dev',
 }
 
 export default function RootLayout({
@@ -20,17 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ar" dir="rtl">
-      <head>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-      </head>
-      <body className={`min-h-screen bg-background antialiased font-sans`}>
-          {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   )
 }
-
-
-import './globals.css'
